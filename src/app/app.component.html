@@ -1,0 +1,11 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="main">
+  State: {{ state }}
+  <div class="device-wrapper center ">
+    <div class="device" [ngClass]="classNames" [ngStyle]="{'opacity': opacity}"></div>
+  </div>
+
+  Thing-Name: <input (keyup)="onThingNameChanged($event)" value="TEDyLight">
+  <button (click)="onClickConnect()">Connect</button>
+</div>
+<router-outlet></router-outlet>
